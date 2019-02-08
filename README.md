@@ -25,13 +25,13 @@ mql4zmqのexampleを参考に実装していくことになるのですが、そ
 ## Wine 環境でZMQを使うときにはまること
 
 - Wine側のMQLから一度使ったポートはなかなか開放されない
- - どうしても使えない場合は `wineserver -k` をしてwinewerver を殺してください。
+  - どうしても使えない場合は `wineserver -k` をしてwinewerver を殺してください。
 - Wine側でPUSHPULL用にバインドしたポートを、ポート開放してからPUBSUB用に使おうとしても動かない
 
 ## pyzmqではまったこと。
 
 - pyzmq 17.0.0 は zmq 2.2 とPUBSUB する際、zmq側からSubscribeできない。
- - pyzmq 17.1.2を使うと直った。
+  - pyzmq 17.1.2を使うと直った。
 
 
 ## コードとか。
